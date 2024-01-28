@@ -1,5 +1,8 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
 # Maintainer: Danilo J. S. Bellini <danilo dot bellini at gmail dot com>
 # Contributor: Felix Yan <felixonmars@archlinux.org>
+
 pkgname=python2-backports
 _name=${pkgname#python2-}
 pkgver=1.1
@@ -29,3 +32,5 @@ package() {
     install -Dm644 '{}' "$pkgdir/usr/lib/python2.7/site-packages"/'{}' \;
   install -Dm644 LICENSE.TXT "$pkgdir/usr/share/licenses/$pkgname/LICENSE.txt"
 }
+
+# vim:set sw=2 sts=-1 et:
